@@ -1,4 +1,4 @@
-var Genetics = function(){
+var Generics = function(){
 
 
 
