@@ -1,0 +1,13 @@
+{
+  "name": "GeneticsHandIn",
+  "version": "0.0.0",
+  "homepage": "https://github.com/HarpoonIO/GeneticsHandIn",
+  "authors": [
+    "Thomas Hedegaard",
+    "Christopher Mortensen"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
