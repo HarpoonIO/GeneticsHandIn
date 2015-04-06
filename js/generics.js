@@ -99,7 +99,7 @@ var Generics = function (_t, _chromosomeSize, _populationSize, _iterations, _gen
         }
         newC.setFitness(cold.getFitness());
         return newC;
-    
+
     }
 
     function evaluate() {
