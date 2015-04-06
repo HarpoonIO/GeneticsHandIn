@@ -88,7 +88,12 @@ var Task = function (name) {
     };
 
     return {
-        foo: foo
+        foo: foo,
+        fitness: fitness,
+        printChromosome: printChromosome,
+        printIteration: printIteratinon,
+        populateGeneCollection: populateGeneCollection,
+        printMessage: printMessage
     };
 
 };
