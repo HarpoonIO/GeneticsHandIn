@@ -7,7 +7,7 @@ var Generics = function (_t, _chromosomeSize, _populationSize, _iterations, _gen
     var geneCollection = _geneCollection; // array of genes
     var chromosomeCollection = new Array(_populationSize); // array of chromosomes
     var newGeneration = new Array(_populationSize); // array of chromosomes
-    var fit, fitFirst, fitSecond, fitTotal, fitAverage, fitWheel, fitCount = 0.1; // TODO: maybe in need of variables(and values) here..
+    var fit, fitFirst, fitSecond, fitTotal, fitAverage, fitWheel, fitCount;
     var mutationProbability = _mutationProbability;
     var populationSize = _populationSize;
     var chromosomeSize = _chromosomeSize;
@@ -85,13 +85,14 @@ var Generics = function (_t, _chromosomeSize, _populationSize, _iterations, _gen
             if (Math.random() < mutationProbability) {
                 g = chromosomeCollection[chromosomeNumber].getGene(i);
                 gMutated = geneCollection[geneSize * Math.random()];
-                t.printMessage("Mutation number in c: " + chromosomeNumber + "gene: " + geneSize); // TODO: missing something
+                t.printMessage("Mutation number in chromosome c: " + chromosomeNumber + "gene: " + geneSize); // TODO: missing something
                 chromosomeCollection[chromosomeNumber].setGene(i, gMutated);
             }
         }
     }
 
-    function cloneChromosome(cold) { // Will return a chromosome - cold is a chromosome
+    // Will return a chromosome - cold is a chromosome
+    function cloneChromosome(cold) {
 
         var newC = new Chromosome(chromosomeSize);
         for (var i = 0; i < chromosomeSize; i++) {

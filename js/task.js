@@ -1,4 +1,4 @@
-var Task = function (name) {
+var Task = function () {
 
     // Constants
     var NoOf_Genes = 12;
@@ -20,12 +20,12 @@ var Task = function (name) {
     var f;  // fitness
 
     // 'constructor'
-    // TODO: populateGeneColleciton()
+    populateGeneCollection();
     console.log("Generation 0");
     new Generics(this, NoOf_Genes, NoOf_Chromosones, NoOf_Iteraitons, NoOf_GeneBits, NoOf_DifferentGenes); // TODO: check this
 
     // populate collection of possible genes...
-    var populateGeneCollection = function () {
+    function populateGeneCollection() {
         geneCollection[0] = new Gene([0, 0, 0, 1]);
         geneCollection[1] = new Gene([0, 0, 1, 0]);
         geneCollection[2] = new Gene([0, 1, 0, 0]);
@@ -69,7 +69,7 @@ var Task = function (name) {
 
     // Print iteration result
     var printIteratinon = function(n, tot, avg, cFirst, cSecond){
-        console.log("Two best chromosomes: ");
+        console.log("Best two chromosome are: ");
         printChromosome(cFirst);
         printChromosome(cSecond);
         console.log("Iteration number: " + n + ", Total fitness: " + tot + ", Average: " + avg);
