@@ -2,7 +2,7 @@ var Gene = function(_bits){ // bit array
     var bits = _bits;
 
     // Functions start
-    var getbit = function(index){
+    var getBit = function(index){
         return bits[index];
     };
 
@@ -22,7 +22,7 @@ var Gene = function(_bits){ // bit array
 
     return{
         foo: foo,
-        getBit: getbit,
+        getBit: getBit,
         toString: toString
     };
 

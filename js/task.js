@@ -68,7 +68,7 @@ var Task = function () {
     };
 
     // Print iteration result
-    var printIteratinon = function(n, tot, avg, cFirst, cSecond){
+    var printIteration = function(n, tot, avg, cFirst, cSecond){
         console.log("Best two chromosome are: ");
         printChromosome(cFirst);
         printChromosome(cSecond);
@@ -91,7 +91,7 @@ var Task = function () {
         foo: foo,
         fitness: fitness,
         printChromosome: printChromosome,
-        printIteration: printIteratinon,
+        printIteration: printIteration,
         populateGeneCollection: populateGeneCollection,
         printMessage: printMessage
     };

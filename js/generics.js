@@ -13,7 +13,7 @@ var Generics = function (_t, _chromosomeSize, _populationSize, _iterations, _gen
     var chromosomeSize = _chromosomeSize;
     var geneSize = _genesize;
     var crossOverPoint;
-    var iteraions = _iterations;
+    var iterations = _iterations;
     var iterationNumber = 0;
 
     initPopulation();
@@ -38,7 +38,7 @@ var Generics = function (_t, _chromosomeSize, _populationSize, _iterations, _gen
 
     function simulate() {
 
-        while (iterationNumber < iteraions) {
+        while (iterationNumber < iterations) {
             iterationNumber++;
 
             newGeneration[0] = cFirst;
