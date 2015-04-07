@@ -11,7 +11,6 @@ var Gene = function(_bits){ // bit array
         for(var i = 0; i < bits.length; i++){
             result += bits[i];
         }
-        result = "this is a custom toString function call!!!";
         return result;
     };
 

@@ -50,7 +50,7 @@ var Task = function () {
             extraCapacity[i] = chromosomeCapacity[i] - routeCapacity;
             relativeSurplus[i] = chromosomeCapacity[i] / routeCapacity;
         }
-        // TODO: check Math.min()....
+
         f = Math.min(Math.min(relativeSurplus[0], relativeSurplus[1]), Math.min(relativeSurplus[2], relativeSurplus[3]));
         f = Math.max(f, 0);
         c.setFitness(f);

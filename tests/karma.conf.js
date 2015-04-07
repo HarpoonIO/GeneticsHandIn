@@ -20,7 +20,9 @@ module.exports = function (config) {
             'js/generics.js',
             'js/task.js',
             // Test files goes here
-            'tests/gene_test.js'
+            'tests/gene_test.js',
+            'tests/chromosome_test.js'
+
         ],
 
 

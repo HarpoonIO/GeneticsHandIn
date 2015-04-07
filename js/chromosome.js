@@ -4,7 +4,7 @@ var Chromosome = function (noOfGenes) {
 
     // Functions start
     var getGene = function (index) {
-        return genes[i];
+        return genes[index];
     };
 
     var setGene = function (index, gene) {
